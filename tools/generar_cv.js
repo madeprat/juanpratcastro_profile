@@ -9,7 +9,7 @@ const {
 } = require("docx");
 
 const ROOT = path.join(__dirname, "..");
-const FOTO = path.join(ROOT, "asset/photo/juanprat_cv.png");
+const FOTO = path.join(ROOT, "asset/photo/juanprat_cv.jpg");
 const SALIDA = path.join(ROOT, "asset/cvx/2026");
 
 const AZUL = "1F3864";
@@ -219,7 +219,7 @@ function cabecera(v) {
   const foto = new Paragraph({
     alignment: AlignmentType.RIGHT,
     children: [
-      new ImageRun({ type: "png", data: fs.readFileSync(FOTO), transformation: { width: 96, height: 104 } }),
+      new ImageRun({ type: "jpg", data: fs.readFileSync(FOTO), transformation: { width: 100, height: 100 } }),
     ],
   });
   return new Table({
@@ -300,7 +300,7 @@ function construir(v) {
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 
 function html(v) {
-  const foto = "data:image/png;base64," + fs.readFileSync(FOTO).toString("base64");
+  const foto = "data:image/jpeg;base64," + fs.readFileSync(FOTO).toString("base64");
   const exp = v.experiencia.map((e) => `
     <div class="item"><div class="fila"><b>${esc(e.puesto)}</b><span>${esc(e.fechas)}</span></div>
     <div class="sub">${esc(e.lugar)}</div>${e.intro ? `<p>${esc(e.intro)}</p>` : ""}
