@@ -148,6 +148,45 @@ const VERSIONES = [
     experiencia: [RUTAS, CERLER, EXPO, DANA],
     formacionPrimero: true,
   },
+  {
+    archivo: "CV_JAPC_2026_Relaciones_Institucionales",
+    titular: "Eventos institucionales · Protocolo · Atención a invitados",
+    perfil:
+      "Estudiante de Historia en la Universitat de València (primer curso con Matrícula de Honor), con interés por el protocolo, " +
+      "las relaciones institucionales y la organización de actos. He trabajado de cara al público con clientela internacional y en " +
+      "la logística de un congreso nacional, recibiendo y acreditando a asistentes y coordinando a ponentes y moderadores. " +
+      "Me distinguen la discreción, el saber estar y la calma en los momentos de máxima presión. Además, me comunico en español, valenciano e inglés. " +
+      "Busco incorporarme como auxiliar o azafato en actos institucionales, congresos y eventos corporativos.",
+    competencias: [
+      "Protocolo, saber estar y buena presencia",
+      "Discreción y trato formal con ponentes e invitados",
+      "Recepción, acreditación y acompañamiento de asistentes",
+      "Calma y resolución de imprevistos en directo",
+      "Español, valenciano e inglés en entornos formales",
+      "Contexto histórico e institucional (Grado en Historia)",
+    ],
+    experiencia: [
+      {
+        ...EXPO,
+        bullets: [
+          "Recepción y acreditación de asistentes, y entrega de materiales en un congreso nacional de tecnología.",
+          "Coordinación con ponentes y moderadores: gestión de micrófonos, turnos de palabra y tiempos de intervención.",
+          "Montaje de sala y señalética, y apoyo continuo durante toda la jornada.",
+        ],
+      },
+      {
+        ...CERLER,
+        bullets: [
+          "Atención a clientela nacional e internacional, adaptando el registro y el idioma a cada persona, del trato cercano al más formal.",
+          "Servicio en picos de alta demanda con tiempos ajustados, sin perder la calidad ni la atención al detalle.",
+          "Resolución de incidencias en el momento, con discreción y buen criterio.",
+          "Valorado por la dirección por su autonomía, fiabilidad y capacidad de mantener la calma en momentos de máxima presión.",
+        ],
+      },
+      RUTAS,
+      DANA,
+    ],
+  },
 ];
 
 // ---------- Utilidades de formato ----------
